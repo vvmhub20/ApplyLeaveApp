@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132DD5A55FBBEF6040C4E26B /* Pods_ApplyLeaveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BE01B7480C033A2A407F22 /* Pods_ApplyLeaveApp.framework */; };
+		840804F82CF0A39700B61F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840804F72CF0A39700B61F86 /* AppDelegate.swift */; };
+		840804FA2CF0A39700B61F86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840804F92CF0A39700B61F86 /* SceneDelegate.swift */; };
+		840804FC2CF0A39700B61F86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840804FB2CF0A39700B61F86 /* ViewController.swift */; };
+		840804FF2CF0A39700B61F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840804FD2CF0A39700B61F86 /* Main.storyboard */; };
+		840805012CF0A39900B61F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840805002CF0A39900B61F86 /* Assets.xcassets */; };
+		840805042CF0A39900B61F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840805022CF0A39900B61F86 /* LaunchScreen.storyboard */; };
+		840805132CF0A41400B61F86 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805122CF0A41400B61F86 /* AppColor.swift */; };
+		840805152CF0A42400B61F86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805142CF0A42400B61F86 /* User.swift */; };
+		840805172CF0A43500B61F86 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805162CF0A43500B61F86 /* LoginViewModel.swift */; };
+		840805192CF0A44D00B61F86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805182CF0A44D00B61F86 /* LoginViewController.swift */; };
+		8408051F2CF0A50C00B61F86 /* LeaveStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408051E2CF0A50C00B61F86 /* LeaveStatusViewController.swift */; };
+		840805272CF0A62700B61F86 /* ApplyLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805262CF0A62700B61F86 /* ApplyLeaveViewController.swift */; };
+		8408052F2CF0A74600B61F86 /* LeaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408052E2CF0A74600B61F86 /* LeaveType.swift */; };
+		840805312CF0A75B00B61F86 /* ApplyLeaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805302CF0A75B00B61F86 /* ApplyLeaveViewModel.swift */; };
+		840805372CF0A8F000B61F86 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805362CF0A8F000B61F86 /* ProfileViewModel.swift */; };
+		840805392CF0A91100B61F86 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805382CF0A91100B61F86 /* ProfileViewController.swift */; };
+		8408053B2CF0B61F00B61F86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408053A2CF0B61F00B61F86 /* HomeViewController.swift */; };
+		8408053D2CF0B63000B61F86 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408053C2CF0B63000B61F86 /* HomeViewModel.swift */; };
+		8408053F2CF0B6FC00B61F86 /* DrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408053E2CF0B6FC00B61F86 /* DrawerMenu.swift */; };
+		840805412CF0B78000B61F86 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805402CF0B78000B61F86 /* HomeCoordinator.swift */; };
+		840805482CF0C99200B61F86 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805472CF0C99200B61F86 /* Staff.swift */; };
+		8408054A2CF0C9A400B61F86 /* StaffListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805492CF0C9A400B61F86 /* StaffListViewModel.swift */; };
+		8408054C2CF0C9BA00B61F86 /* AddStaffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408054B2CF0C9BA00B61F86 /* AddStaffViewModel.swift */; };
+		8408054E2CF0C9D100B61F86 /* StaffListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408054D2CF0C9D100B61F86 /* StaffListViewController.swift */; };
+		840805502CF0C9E000B61F86 /* AddStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408054F2CF0C9E000B61F86 /* AddStaffViewController.swift */; };
+		840805522CF0CA0100B61F86 /* StaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805512CF0CA0100B61F86 /* StaffDetailViewController.swift */; };
+		840805542CF0CD7B00B61F86 /* StaffManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840805532CF0CD7B00B61F86 /* StaffManager.swift */; };
+		846994722CF113BC00ED1948 /* LeaveStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846994712CF113BC00ED1948 /* LeaveStatusViewModel.swift */; };
+		849ED9F62CF0F20300BD256E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9F52CF0F20300BD256E /* Utility.swift */; };
+		849ED9F82CF1109400BD256E /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9F72CF1109400BD256E /* StaffTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44BE01B7480C033A2A407F22 /* Pods_ApplyLeaveApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplyLeaveApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840804F42CF0A39700B61F86 /* ApplyLeaveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplyLeaveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840804F72CF0A39700B61F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840804F92CF0A39700B61F86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		840804FB2CF0A39700B61F86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840804FE2CF0A39700B61F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840805002CF0A39900B61F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840805032CF0A39900B61F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840805052CF0A39900B61F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840805122CF0A41400B61F86 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		840805142CF0A42400B61F86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		840805162CF0A43500B61F86 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		840805182CF0A44D00B61F86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8408051E2CF0A50C00B61F86 /* LeaveStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveStatusViewController.swift; sourceTree = "<group>"; };
+		840805262CF0A62700B61F86 /* ApplyLeaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveViewController.swift; sourceTree = "<group>"; };
+		8408052E2CF0A74600B61F86 /* LeaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveType.swift; sourceTree = "<group>"; };
+		840805302CF0A75B00B61F86 /* ApplyLeaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveViewModel.swift; sourceTree = "<group>"; };
+		840805362CF0A8F000B61F86 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		840805382CF0A91100B61F86 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8408053A2CF0B61F00B61F86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8408053C2CF0B63000B61F86 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8408053E2CF0B6FC00B61F86 /* DrawerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenu.swift; sourceTree = "<group>"; };
+		840805402CF0B78000B61F86 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		840805472CF0C99200B61F86 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		840805492CF0C9A400B61F86 /* StaffListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListViewModel.swift; sourceTree = "<group>"; };
+		8408054B2CF0C9BA00B61F86 /* AddStaffViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStaffViewModel.swift; sourceTree = "<group>"; };
+		8408054D2CF0C9D100B61F86 /* StaffListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListViewController.swift; sourceTree = "<group>"; };
+		8408054F2CF0C9E000B61F86 /* AddStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStaffViewController.swift; sourceTree = "<group>"; };
+		840805512CF0CA0100B61F86 /* StaffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailViewController.swift; sourceTree = "<group>"; };
+		840805532CF0CD7B00B61F86 /* StaffManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffManager.swift; sourceTree = "<group>"; };
+		846994712CF113BC00ED1948 /* LeaveStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveStatusViewModel.swift; sourceTree = "<group>"; };
+		849ED9F52CF0F20300BD256E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = ../../../../Downloads/UserConnect/UserConnect/Utility/Utility.swift; sourceTree = "<group>"; };
+		849ED9F72CF1109400BD256E /* StaffTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffTableViewCell.swift; sourceTree = "<group>"; };
+		A77CEAF81282C5AC558813CC /* Pods-ApplyLeaveApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplyLeaveApp.release.xcconfig"; path = "Target Support Files/Pods-ApplyLeaveApp/Pods-ApplyLeaveApp.release.xcconfig"; sourceTree = "<group>"; };
+		E5ECEEF402115477B5A3008F /* Pods-ApplyLeaveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplyLeaveApp.debug.xcconfig"; path = "Target Support Files/Pods-ApplyLeaveApp/Pods-ApplyLeaveApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840804F12CF0A39700B61F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132DD5A55FBBEF6040C4E26B /* Pods_ApplyLeaveApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840804EB2CF0A39700B61F86 = {
+			isa = PBXGroup;
+			children = (
+				840804F62CF0A39700B61F86 /* ApplyLeaveApp */,
+				840804F52CF0A39700B61F86 /* Products */,
+				D08A76B47E0E1E4ECEE54BB5 /* Pods */,
+				EE4B316FACDFBA4C37C66165 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		840804F52CF0A39700B61F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840804F42CF0A39700B61F86 /* ApplyLeaveApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840804F62CF0A39700B61F86 /* ApplyLeaveApp */ = {
+			isa = PBXGroup;
+			children = (
+				8408050F2CF0A3D900B61F86 /* Resources */,
+				8408050D2CF0A3CB00B61F86 /* Views */,
+				8408050C2CF0A3C500B61F86 /* ViewModels */,
+				8408050B2CF0A3BC00B61F86 /* Models */,
+				840804F72CF0A39700B61F86 /* AppDelegate.swift */,
+				840804F92CF0A39700B61F86 /* SceneDelegate.swift */,
+				840804FB2CF0A39700B61F86 /* ViewController.swift */,
+				840804FD2CF0A39700B61F86 /* Main.storyboard */,
+				840805002CF0A39900B61F86 /* Assets.xcassets */,
+				840805022CF0A39900B61F86 /* LaunchScreen.storyboard */,
+				840805052CF0A39900B61F86 /* Info.plist */,
+			);
+			path = ApplyLeaveApp;
+			sourceTree = "<group>";
+		};
+		8408050B2CF0A3BC00B61F86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840805142CF0A42400B61F86 /* User.swift */,
+				8408052E2CF0A74600B61F86 /* LeaveType.swift */,
+				840805472CF0C99200B61F86 /* Staff.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8408050C2CF0A3C500B61F86 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				846994712CF113BC00ED1948 /* LeaveStatusViewModel.swift */,
+				840805302CF0A75B00B61F86 /* ApplyLeaveViewModel.swift */,
+				840805162CF0A43500B61F86 /* LoginViewModel.swift */,
+				840805362CF0A8F000B61F86 /* ProfileViewModel.swift */,
+				8408053C2CF0B63000B61F86 /* HomeViewModel.swift */,
+				840805492CF0C9A400B61F86 /* StaffListViewModel.swift */,
+				8408054B2CF0C9BA00B61F86 /* AddStaffViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8408050D2CF0A3CB00B61F86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849ED9F42CF0EB2400BD256E /* Staff */,
+				840805462CF0BEA100B61F86 /* Profile */,
+				840805452CF0BE8500B61F86 /* Leave */,
+				840805432CF0BE6F00B61F86 /* Login */,
+				840805422CF0BE5100B61F86 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8408050F2CF0A3D900B61F86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				840805122CF0A41400B61F86 /* AppColor.swift */,
+				849ED9F52CF0F20300BD256E /* Utility.swift */,
+				840805532CF0CD7B00B61F86 /* StaffManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		840805422CF0BE5100B61F86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				840805402CF0B78000B61F86 /* HomeCoordinator.swift */,
+				8408053A2CF0B61F00B61F86 /* HomeViewController.swift */,
+				8408053E2CF0B6FC00B61F86 /* DrawerMenu.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		840805432CF0BE6F00B61F86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				840805182CF0A44D00B61F86 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		840805452CF0BE8500B61F86 /* Leave */ = {
+			isa = PBXGroup;
+			children = (
+				840805262CF0A62700B61F86 /* ApplyLeaveViewController.swift */,
+				8408051E2CF0A50C00B61F86 /* LeaveStatusViewController.swift */,
+			);
+			name = Leave;
+			sourceTree = "<group>";
+		};
+		840805462CF0BEA100B61F86 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				840805382CF0A91100B61F86 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		849ED9F42CF0EB2400BD256E /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				8408054D2CF0C9D100B61F86 /* StaffListViewController.swift */,
+				8408054F2CF0C9E000B61F86 /* AddStaffViewController.swift */,
+				840805512CF0CA0100B61F86 /* StaffDetailViewController.swift */,
+				849ED9F72CF1109400BD256E /* StaffTableViewCell.swift */,
+			);
+			name = Staff;
+			sourceTree = "<group>";
+		};
+		D08A76B47E0E1E4ECEE54BB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5ECEEF402115477B5A3008F /* Pods-ApplyLeaveApp.debug.xcconfig */,
+				A77CEAF81282C5AC558813CC /* Pods-ApplyLeaveApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE4B316FACDFBA4C37C66165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44BE01B7480C033A2A407F22 /* Pods_ApplyLeaveApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840804F32CF0A39700B61F86 /* ApplyLeaveApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840805082CF0A39900B61F86 /* Build configuration list for PBXNativeTarget "ApplyLeaveApp" */;
+			buildPhases = (
+				D939CA83A2EC1E6D1761DD43 /* [CP] Check Pods Manifest.lock */,
+				840804F02CF0A39700B61F86 /* Sources */,
+				840804F12CF0A39700B61F86 /* Frameworks */,
+				840804F22CF0A39700B61F86 /* Resources */,
+				80E42D7B9CB5C2CE8824C95A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplyLeaveApp;
+			productName = ApplyLeaveApp;
+			productReference = 840804F42CF0A39700B61F86 /* ApplyLeaveApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840804EC2CF0A39700B61F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					840804F32CF0A39700B61F86 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 840804EF2CF0A39700B61F86 /* Build configuration list for PBXProject "ApplyLeaveApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840804EB2CF0A39700B61F86;
+			productRefGroup = 840804F52CF0A39700B61F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840804F32CF0A39700B61F86 /* ApplyLeaveApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840804F22CF0A39700B61F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840805042CF0A39900B61F86 /* LaunchScreen.storyboard in Resources */,
+				840805012CF0A39900B61F86 /* Assets.xcassets in Resources */,
+				840804FF2CF0A39700B61F86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80E42D7B9CB5C2CE8824C95A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplyLeaveApp/Pods-ApplyLeaveApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApplyLeaveApp/Pods-ApplyLeaveApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApplyLeaveApp/Pods-ApplyLeaveApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D939CA83A2EC1E6D1761DD43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplyLeaveApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840804F02CF0A39700B61F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840805522CF0CA0100B61F86 /* StaffDetailViewController.swift in Sources */,
+				8408053B2CF0B61F00B61F86 /* HomeViewController.swift in Sources */,
+				846994722CF113BC00ED1948 /* LeaveStatusViewModel.swift in Sources */,
+				840805132CF0A41400B61F86 /* AppColor.swift in Sources */,
+				849ED9F82CF1109400BD256E /* StaffTableViewCell.swift in Sources */,
+				8408054A2CF0C9A400B61F86 /* StaffListViewModel.swift in Sources */,
+				840805412CF0B78000B61F86 /* HomeCoordinator.swift in Sources */,
+				840805152CF0A42400B61F86 /* User.swift in Sources */,
+				840805392CF0A91100B61F86 /* ProfileViewController.swift in Sources */,
+				8408051F2CF0A50C00B61F86 /* LeaveStatusViewController.swift in Sources */,
+				840804FC2CF0A39700B61F86 /* ViewController.swift in Sources */,
+				840805312CF0A75B00B61F86 /* ApplyLeaveViewModel.swift in Sources */,
+				840805192CF0A44D00B61F86 /* LoginViewController.swift in Sources */,
+				840805272CF0A62700B61F86 /* ApplyLeaveViewController.swift in Sources */,
+				840804F82CF0A39700B61F86 /* AppDelegate.swift in Sources */,
+				840805372CF0A8F000B61F86 /* ProfileViewModel.swift in Sources */,
+				840805542CF0CD7B00B61F86 /* StaffManager.swift in Sources */,
+				840805482CF0C99200B61F86 /* Staff.swift in Sources */,
+				8408053F2CF0B6FC00B61F86 /* DrawerMenu.swift in Sources */,
+				840804FA2CF0A39700B61F86 /* SceneDelegate.swift in Sources */,
+				840805502CF0C9E000B61F86 /* AddStaffViewController.swift in Sources */,
+				849ED9F62CF0F20300BD256E /* Utility.swift in Sources */,
+				8408054C2CF0C9BA00B61F86 /* AddStaffViewModel.swift in Sources */,
+				840805172CF0A43500B61F86 /* LoginViewModel.swift in Sources */,
+				8408053D2CF0B63000B61F86 /* HomeViewModel.swift in Sources */,
+				8408052F2CF0A74600B61F86 /* LeaveType.swift in Sources */,
+				8408054E2CF0C9D100B61F86 /* StaffListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		840804FD2CF0A39700B61F86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840804FE2CF0A39700B61F86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840805022CF0A39900B61F86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840805032CF0A39900B61F86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840805062CF0A39900B61F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		840805072CF0A39900B61F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840805092CF0A39900B61F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5ECEEF402115477B5A3008F /* Pods-ApplyLeaveApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApplyLeaveApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ApplyLeaveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8408050A2CF0A39900B61F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77CEAF81282C5AC558813CC /* Pods-ApplyLeaveApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApplyLeaveApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ApplyLeaveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840804EF2CF0A39700B61F86 /* Build configuration list for PBXProject "ApplyLeaveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840805062CF0A39900B61F86 /* Debug */,
+				840805072CF0A39900B61F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840805082CF0A39900B61F86 /* Build configuration list for PBXNativeTarget "ApplyLeaveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840805092CF0A39900B61F86 /* Debug */,
+				8408050A2CF0A39900B61F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840804EC2CF0A39700B61F86 /* Project object */;
+}
